@@ -1,0 +1,248 @@
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2
+$ git init
+Initialized empty Git repository in C:/Users/Grupo1.DESK
+TOP-D80OTB0/Repo2/.git/
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ it remote add origin https://github.com/User202420256/LabGit2.git
+bash: it: command not found
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git remote add origin https://github.com/User202420256/LabGit2.git
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        lista nombres.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git add .
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git commit -m
+error: switch `m' requires a value
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git commit -m "Ya enemos los libreos"
+[master (root-commit) 332526f] Ya enemos los libreos
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lista nombres.txt
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$  git push --set-upstream origin master
+
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git push --set-upstream origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 444 bytes | 222.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/User202420256/LabGit2.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git add index.html
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git commit -m " Añadimos index.html v1"
+[master 5f15110]  Añadimos index.html v1
+ 1 file changed, 10 insertions(+)
+ create mode 100644 index.html
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 485 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/User202420256/LabGit2.git
+   332526f..5f15110  master -> master
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git add index.html
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git add index.html
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git commit -m " Version2"
+[master 893386e]  Version2
+ 1 file changed, 2 insertions(+)
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ ls -l
+total 2
+-rw-r--r-- 1 Grupo1 197121 339 May  6 12:01  index.html
+-rw-r--r-- 1 Grupo1 197121 390 May  2 12:15 'lista nombres.txt'
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ ls -l
+total 2
+-rw-r--r-- 1 Grupo1 197121 339 May  6 12:06  index.html
+-rw-r--r-- 1 Grupo1 197121 390 May  2 12:15 'lista nombres.txt'
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git add .
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git commit -m " Version 2"
+[master 3ea6f24]  Version 2
+ 1 file changed, 1 insertion(+)
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 662 bytes | 331.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/User202420256/LabGit2.git
+   5f15110..3ea6f24  master -> master
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ciclo de vida clasico del soflware.jpg
+        "los 12 principios de animaci\303\263n agil.jpg"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git add .
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git commit -m "Subo dos imagenes"
+[master e351df1] Subo dos imagenes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ciclo de vida clasico del soflware.jpg
+ create mode 100644 "los 12 principios de animaci\303\263n agil.jpg"
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 332.92 KiB | 15.13 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/User202420256/LabGit2.git
+   3ea6f24..e351df1  master -> master
+
+Grupo1@DESKTOP-D80OTB0 MINGW64 ~/Repo2 (master)
